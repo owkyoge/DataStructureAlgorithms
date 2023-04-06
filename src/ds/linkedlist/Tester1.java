@@ -4,10 +4,10 @@ public class Tester1 {
 
 	public static void main(String[] args) {
 
-		Node n4 = new Node("D", null);
-	    Node n3 = new Node("C", n4);
-	    Node n2 = new Node("B", n3);
-	    Node n1 = new Node("C", n2);
+		NodeStr n4 = new NodeStr("D", null);
+	    NodeStr n3 = new NodeStr("C", n4);
+	    NodeStr n2 = new NodeStr("B", n3);
+	    NodeStr n1 = new NodeStr("C", n2);
 
 
 	    System.out.println(n1.next.next.value);

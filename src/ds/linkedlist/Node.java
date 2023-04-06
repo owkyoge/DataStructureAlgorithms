@@ -2,14 +2,14 @@ package ds.linkedlist;
 
 public class Node {
 
-	String value;
+	int data;
 	Node next;
 	
-	Node(String value, Node next){
-		this.value=value;
-		this.next=next;
+	
+	Node(int data){
+		this.data=data;
+		this.next=null;
+		
 	}
-	
-	
-	
+
 }
