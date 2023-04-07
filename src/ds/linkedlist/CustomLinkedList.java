@@ -19,5 +19,30 @@ public class CustomLinkedList {
 			tail = newnode;
 		}
 	}
+	
+	
+	public void print() {
+		Node curNode = head;
+		while(curNode != null) {
+			System.out.println(curNode.data);
+			
+			curNode = curNode.next;
+			
+			
+		}
+	}
+	
+	public void findNthNode(int index) {
+		int i = 1;
+		
+		Node curNode = head;
+		while(i!=index) {
+			curNode = curNode.next;
+			i++;
+		}
+		
+		System.out.println("Current Node DATA " + curNode.data);
+		
+	}
 
 }

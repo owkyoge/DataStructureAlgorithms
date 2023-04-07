@@ -16,6 +16,8 @@ public class TesterCL {
 		System.out.println(cll);
 
 		
+		cll.print();
+		cll.findNthNode(5);
 		
 	}
 
