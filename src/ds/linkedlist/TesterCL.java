@@ -14,17 +14,19 @@ public class TesterCL {
 		cll.add(5);
 		cll.add(6);
 
-		System.out.println(cll);
+	//	System.out.println(cll);
 
-		cll.print();
-		cll.findNthNode(5);
+	//	cll.print();
+	//	cll.findNthNode(5);
 
 		//int x = 5;
-		int x = 15;
-		if (cll.search(cll.head, x))
-			System.out.println("YES");
-		else
-			System.out.println("No");
+	//	int x = 15;
+	//	if (cll.search(cll.head, x))
+	//		System.out.println("YES");
+	//	else
+	//		System.out.println("No");
+		
+		System.out.println(cll.getCount());
 
 	}
 

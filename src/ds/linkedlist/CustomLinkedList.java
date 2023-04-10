@@ -61,5 +61,15 @@ public class CustomLinkedList {
 		return false;
 
 	}
+	
+	public int getCount() {
+		Node temp = head;
+		int count = 0;
+		while(temp != null) {
+			count++;
+			 temp = temp.next;
+		}
+		return count;
+	}
 
 }
