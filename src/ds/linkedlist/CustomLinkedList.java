@@ -42,18 +42,12 @@ public class CustomLinkedList {
 
 	}
 
-	public void searchElement(int new_data) {
-		Node new_node = new Node(new_data);
-		new_node.next = head;
-		head = new_node;
-
-	}
-
-	public boolean search(Node head, int x) {
+	public boolean search(int x) {
 		Node current = head;
 		while (current != null) {
-			if (current.data == x)
+			if (current.data == x) {
 				return true;
+			}
 			current = current.next;
 
 		}
@@ -61,13 +55,13 @@ public class CustomLinkedList {
 		return false;
 
 	}
-	
+
 	public int getCount() {
 		Node temp = head;
 		int count = 0;
-		while(temp != null) {
+		while (temp != null) {
 			count++;
-			 temp = temp.next;
+			temp = temp.next;
 		}
 		return count;
 	}
