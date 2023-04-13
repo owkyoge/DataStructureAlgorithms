@@ -1,5 +1,7 @@
 package ds.linkedlist;
 
+import java.util.Stack;
+
 public class CustomLinkedList {
 
 	Node head;
@@ -66,4 +68,32 @@ public class CustomLinkedList {
 		return count;
 	}
 
+	public void reverse() {
+		Node curNode = head;
+
+		Stack<Node> s = new Stack<>();
+
+		while (curNode != null) {
+
+			s.push(curNode);
+			curNode = curNode.next;
+
+		}
+
+		Node curNode1 = s.pop();
+
+		for (Node n : s) {
+			curNode1.next = n;
+
+		}
+
+		while (curNode1 != null) {
+
+			curNode1 = curNode1.next;
+			System.out.println(curNode1.data);
+			
+
+		}
+
+	}
 }

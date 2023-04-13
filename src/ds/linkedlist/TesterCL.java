@@ -16,11 +16,11 @@ public class TesterCL {
 
 	//	System.out.println(cll);
 
-		cll.print();
-		cll.findNthNode(5);
-		boolean search = cll.search(10);
+	//	cll.print();
+	//	cll.findNthNode(5);
+	//	boolean search = cll.search(10);
 		
-		System.out.println(search);
+	//	System.out.println(search);
 
 		//int x = 5;
 	//	int x = 15;
@@ -29,9 +29,11 @@ public class TesterCL {
 	//	else
 	//		System.out.println("No");
 		
-		System.out.println();
+	//	System.out.println();
 		
 	//	System.out.println(cll.getCount());
+		
+		cll.reverse();
 
 	}
 
